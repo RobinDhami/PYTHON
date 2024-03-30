@@ -29,3 +29,30 @@ class Fib:
            
 f = Fib(20)
 f.calc()
+import random
+#Guessing the random number using binary search with least attempts
+def binary_search(target):
+    low = 1
+    high = 100
+    attempts = 0
+    
+    while low <= high:
+        mid = (low + high) // 2
+        attempts += 1
+        
+        if mid == target:
+            return attempts
+        elif mid < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+            
+    return -1  
+# Generate a random target number between 1 and 100
+target_number = random.randint(1, 100)
+print("Target Number:", target_number)
+
+# Perform binary search
+attempts = binary_search(target_number)
+print("Number of attempts:", attempts)
+
