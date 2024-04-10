@@ -2,7 +2,7 @@ name = input("Enter your name??\n")
 if (name == "Rabin Dhami"):
     print("YOu are passed")
 else:
-    print("Fuck You")
+    print("helloooo")
 class sum:
     def __init__(self,x,y):
         self.x = x
@@ -29,3 +29,7 @@ class Fib:
            
 f = Fib(20)
 f.calc()
+a = int(input("Enter the no"))
+b= int(input("eNTER yhe no"))
+sum=a+b
+print(sum)
