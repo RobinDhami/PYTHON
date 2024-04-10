@@ -43,4 +43,25 @@ print("Sorted array is:")
 b.display()
 
 
-
+# Same thing but without using constructor
+class BubbleSort:
+    def sort(self,arr):
+        n = len(arr)
+        for i in range (n):
+            for j in range (0,n-i-1):
+                if(arr[j]>arr[j+1]):
+                    arr[j],arr[j+1] = arr[j+1],arr[j]
+                   
+                    
+    def display(self,arr):
+        for i in arr:
+           print(i, end=" ")
+        
+        
+arr = [64, 34, 25, 12, 22, 11, 90]
+b = BubbleSort()
+b.sort(arr)
+print("Sorted array is:")
+b.display(arr)        
+        
+                
