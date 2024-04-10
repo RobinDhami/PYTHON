@@ -35,7 +35,7 @@ class BubbleSort:
         for i in self.arr:
             print(i, end=" ")
 
-# Example usage
+# Example 
 arr = [64, 34, 25, 12, 22, 11, 90]
 b = BubbleSort(arr)
 b.sort()
