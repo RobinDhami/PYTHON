@@ -2,11 +2,7 @@ name = input("Enter your name??\n")
 if (name == "Rabin Dhami"):
     print("YOu are passed")
 else:
-<<<<<<< HEAD
-    print("helloooo")
-=======
     print("First Day")
->>>>>>> 2a101f6d0df8f82a72c04a29b066d6b9af82b339
 class sum:
     def __init__(self,x,y):
         self.x = x
@@ -33,12 +29,6 @@ class Fib:
            
 f = Fib(20)
 f.calc()
-<<<<<<< HEAD
-a = int(input("Enter the no"))
-b= int(input("eNTER yhe no"))
-sum=a+b
-print(sum)
-=======
 import random
 #Guessing the random number using binary search with least attempts
 def binary_search(target):
@@ -66,4 +56,3 @@ print("Target Number:", target_number)
 attempts = binary_search(target_number)
 print("Number of attempts:", attempts)
 
->>>>>>> 2a101f6d0df8f82a72c04a29b066d6b9af82b339

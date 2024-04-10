@@ -15,5 +15,32 @@ print(s.add())
 
 
 
-# Lets try to solve a dsa question using class
+# Lets try to solve a dsa question using class(Bubble sort)
+class BubbleSort:
+    def __init__(self, arr):
+        self.arr = arr
+
+    def sort(self):
+        n = len(self.arr)
+        # Traverse through all array elements
+        for i in range(n):
+            # Last i elements are already in place
+            for j in range(0, n-i-1):
+                # Traverse the array from 0 to n-i-1
+                # Swap if the element found is greater than the next element
+                if self.arr[j] > self.arr[j+1]:
+                    self.arr[j], self.arr[j+1] = self.arr[j+1], self.arr[j]
+
+    def display(self):
+        for i in self.arr:
+            print(i, end=" ")
+
+# Example usage
+arr = [64, 34, 25, 12, 22, 11, 90]
+b = BubbleSort(arr)
+b.sort()
+print("Sorted array is:")
+b.display()
+
+
 
