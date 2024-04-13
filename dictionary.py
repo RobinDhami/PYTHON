@@ -1,1 +1,6 @@
-x = dict(name="John", age=36)
+database = {}
+
+name = input("Enter your name")
+location = input("Enter your location")
+database = {"name":name,"location":location}
+print(database)
