@@ -4,7 +4,7 @@ class Animal:
 
     def sound(self):
         print("I am a ",self.name)
-
+#Dog child for animal parent 
 class dog(Animal):
     def __init__ (self,bark):
         self.name= bark
