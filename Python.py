@@ -1,6 +1,6 @@
 name = input("Enter your name??\n")
 if (name == "Rabin Dhami"):
-    print("YOu are passed")
+    print("Y0u are passed")
 else:
     print("First Day")
 class sum:
