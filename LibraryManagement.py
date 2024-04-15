@@ -1,26 +1,46 @@
 # Simple CLI for library management system
 
-def addBook():
+def addBook(library):
     title = input("Enter the title of the book")
     author = input("Enter the author of the book")
     library[title]= author
     print("Your Book is successfully added to library")
     print(library)
 
+def search(library):
+    a = input("Enter the name of book")
+    if a in library :
+        print(" {a} found with author {library[query]}")
+
+def delete(library):
+    a = input("Enter the book to be deleted")
+    if a in library:
+        del library[a]
+        print("Book deleted successfully")
+        print(library)
+
 def main():
     library = {
-        "python xyz": "author1",
+        "Python xyz": "author1",
         "Python abc": "author2",
         "Java abc": "author3",
         "Java xyz": "author4"
     }
 
-    search = input("Enter the title of the book to search: ")
+    print("Enter 1 for deletion")
+    print("Enter 2 to add ")
+    print("Enter 3 to search")
 
-    # Use the get() method to search for the book title in the library dictionary
-    book = library.get(search)
-
-    if book:
-        print(f"Book found!\nTitle: {search}\nAuthor: {book}")
+    action = int(input("Enter your choice"))
+    if action==1:
+        delete(library)
+    elif action == 2:
+        addBook(library)
+    elif action == 3 :
+        search(library)
     else:
-        print("Book not found in the library.")
+        print("Invalid number")    
+
+
+if __name__ == "__main__":
+    main()        
