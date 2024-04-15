@@ -17,3 +17,12 @@ print(sum)
 n=100
 Adress= f"kaalanki {n}"
 print(Adress)
+
+#Find index for word
+index=sentence.find("LOVE")
+print(index)
+
+sentence=sentence.lower()
+sentence=sentence.capitalize()
+print(sentence)
+
