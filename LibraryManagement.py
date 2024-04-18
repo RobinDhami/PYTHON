@@ -10,7 +10,7 @@ def addBook(library):
 def search(library):
     a = input("Enter the name of book")
     if a in library :
-        print(" {a} found with author {library[query]}")
+        print(f"{a} found with author {library[a]}")
 
 def delete(library):
     a = input("Enter the book to be deleted")
