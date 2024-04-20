@@ -6,9 +6,9 @@ while True:
     flag = flag+1
     key = int(input("Enter the number: "))
     if a > key:
-        print("Less")
+        print("Enter higher number")
     elif a < key:
-        print("Greater")    
+        print("Enter lower number")    
     elif a == key:
         print("Congratulations!")    
         break
