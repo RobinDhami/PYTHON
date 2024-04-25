@@ -1,5 +1,4 @@
 # Simple CLI for library management system
-
 def addBook(library):
     title = input("Enter the title of the book")
     author = input("Enter the author of the book")
