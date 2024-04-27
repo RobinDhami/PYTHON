@@ -1,4 +1,4 @@
-#Loop in the list 
+#Loop in the list is being done here
 
 list = ["apple", "ball" , "cate" , "dog" , "rat"]
 
