@@ -1,4 +1,4 @@
-python presentation 
+no commit python presentation 
 print("hello world")
 no commit today 
 hey siri
