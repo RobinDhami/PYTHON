@@ -10,3 +10,4 @@ may 3rd
 kwargs learned
 ram bish
 python 3
+no commit?
