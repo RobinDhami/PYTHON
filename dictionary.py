@@ -52,3 +52,24 @@ for i in a:
         print(i)
     else:
         print("not found")    
+
+#Delete items from dictionary 
+dictionry.pop("car") 
+print(dictionry)
+
+# Delete random item from dictionary 
+dictionry.popitem()
+print(dictionry)
+
+# del is used to delete the whole dictionary and cant be accessed again it will cause error or a specified item from dicionary 
+del dictionry["rabin"]
+print(dictionry)
+
+# Clear will will clear the whole dictionary empty it 
+dictionry.clear()
+print(dictionry)
+
+del dictionry
+
+
+
