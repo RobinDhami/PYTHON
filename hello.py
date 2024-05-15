@@ -1,4 +1,4 @@
-no commit python presentation 
+okno commit python presentation 
 print("hello world")
 no commit today 
 hey siri
@@ -12,3 +12,4 @@ ram bish
 python 3
 no commit?
 may 10 
+hostel day 1
