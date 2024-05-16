@@ -20,3 +20,14 @@ a = 42
 print(id(a))
 a = 43
 print(id(a))
+
+b=5
+c=5
+if id(b) == id(c):
+    print("true")
+
+fruits = "apple"
+print(id(fruits))
+fruits="ball"
+print(id(fruits))
+   
