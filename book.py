@@ -1,19 +1,33 @@
 # #palindrome 
 
-# n=int(input("Enter a number"))
-# print(n)
-# while (n!=0):
-#     reverse = 0
-#     remainder = n%10
-#     reverse = abs(reverse*10 + remainder)
-#     n = n/10
-#     print(n)
-#     print(reverse)    
-#     if(reverse==n):
-#         print('palindrome')
+n=int(input("Enter a number"))
+original = n
+print(n)
+reverse = 0
+while (n!=0):
+    remainder = n%10
+    reverse = reverse*10 + remainder
+    n = n//10
+print(reverse)    
+if(reverse==original):
+    print("IS Palindrome")
+else:
+    print("randi")   
+  
+n=int(input("Enter a number"))
+print(n)
+while (n!=0):
+    reverse = 0
+    remainder = n%10
+    reverse = abs(reverse*10 + remainder)
+    n = n/10
+    print(n)
+    print(reverse)    
+    if(reverse==n):
+        print('palindrome')
      
-#     else:
-#         print("Not palindrome")    
+    else:
+        print("Not palindrome")    
   
 
 a = 42 
