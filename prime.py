@@ -9,3 +9,18 @@ for n in range(2, upto + 1):
    if is_prime:  # check on flag
          primes.append(n)
 print(primes)
+
+
+
+class prime:
+   prime=[]
+   def prime(n):
+      for i in range(2,n+1):
+         is_prime=True
+         for x in range(2,n):
+            if i%x==0:
+               is_prime=False
+               break
+         if is_prime:
+            prime.append(i)
+   print(prime)                
