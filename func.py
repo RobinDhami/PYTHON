@@ -3,14 +3,11 @@
 
 # func(a=2,b=6)
 
+from functools import reduce
+from operator import mul
 
-import mysql.connector
+def factorial(n):
+   return reduce(mul,range(1,n+1))
 
-
-db = mysql.connector.connect(
-    'host': 'localhost',     
-    'username': '',
-    'password': 'RAB@@123'
-)
-
-
+f=factorial(5)
+print(f)
