@@ -45,7 +45,7 @@ print("-" * 30)
 
 # Print the data
 for row in result:
-    print(f"{row[0]}\t{row[1]}\t{row[2]}")
+    print(f"/t{row[0]}\t {row[1]}\t {row[2]} ")
 # Close cursor and connection
 cursor.close()
 db.close()
