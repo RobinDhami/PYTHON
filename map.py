@@ -6,5 +6,5 @@ sq1 = list(
  )
 
 print(sq1)
-
-
+a= list(filter(lambda a : a*2,range(10),map(lambda n : n**2,range(10))))
+print(a)
