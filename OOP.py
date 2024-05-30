@@ -27,3 +27,14 @@ class Area():
 a =Area()
 l = int(input("Enter the length of sqaure"))
 a.square(l)
+
+class Rectangle:
+    def __init__(self,a,b): 
+        self.a=a
+        self.b=b
+    def area(self):
+        ar=self.a*self.b
+        print(ar)
+        
+r=Rectangle(23,4)
+r.area()        
