@@ -38,3 +38,10 @@ class Rectangle:
         
 r=Rectangle(23,4)
 r.area()        
+
+#Inheritance
+
+class vehicle:
+    def veh(self,color,engine):
+        print
+    
