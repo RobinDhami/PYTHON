@@ -39,9 +39,26 @@ class Rectangle:
 r=Rectangle(23,4)
 r.area()        
 
-#Inheritance
+# Define the base class 'vehicle'
+class Vehicle:
+    def __init__(self, color, engine):
+        self.color = color  # Initialize instance variable 'color'
+        self.engine = engine  # Initialize instance variable 'engine'
 
-class vehicle:
-    def veh(self,color,engine):
-        print
+# Define a subclass 'Tesla' inheriting from 'Vehicle'
+class Tesla(Vehicle):
+    def __init__(self, color, engine, autopilot):
+        super().__init__(color, engine)  # Call the constructor of the superclass 'Vehicle'
+        self.autopilot = autopilot  # Initialize instance variable 'autopilot'
+
+# Example usage:
+if __name__ == "__main__":
+    # Create an instance of Tesla
+    my_tesla = Tesla("red", "electric", True)
+
+    # Accessing attributes
+    print(f"Color: {my_tesla.color}")
+    print(f"Engine: {my_tesla.engine}")
+    print(f"Autopilot: {my_tesla.autopilot}")
+
     
