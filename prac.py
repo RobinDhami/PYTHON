@@ -15,6 +15,6 @@ def main():
         print("Its a angram ")  
     else:
         print("not")    
-
+no commit today
 if __name__ == "__main__":
     main()
