@@ -23,7 +23,7 @@ def is_prime(n):
     if n <= 1:
         return False
     if n == 2:
-        return n  # 2 is the smallest and only even prime number
+        return True  # 2 is the smallest and only even prime number
     if n % 2 == 0:
         return False  # even numbers greater than 2 are not prime
     
@@ -32,10 +32,15 @@ def is_prime(n):
         if n % i == 0:
             return False
     
-    return n
+    return True
+
 def main():
-    res=is_prime(100)
-    print(res)
+    n = int(input("Enter a number: "))
+    res = is_prime(n)
+    if res:
+        print(f"{n} is a prime number.")
+    else:
+        print(f"{n} is not a prime number.")
 
 if __name__ == "__main__":
-    main()   
+    main()
