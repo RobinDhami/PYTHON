@@ -1,4 +1,4 @@
-ok# class simple():
+# class simple():
 #     pass
 
 # print(type(simple))
