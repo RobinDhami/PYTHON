@@ -66,10 +66,9 @@ del dictionry["rabin"]
 print(dictionry)
 
 # Clear will will clear the whole dictionary empty it 
-dictionry.clear()
+# dictionry.clear()
 print(dictionry)
 
-del dictionry
-
+# del dictionry
 
 
