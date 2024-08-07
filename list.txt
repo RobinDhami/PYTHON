@@ -33,4 +33,3 @@ removes a spscific item from the list
 #clear()
 Clear method clears the whole list 
     eg:list.clear()
-
