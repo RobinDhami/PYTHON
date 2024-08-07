@@ -20,3 +20,13 @@
 # b= datetime.datetime.now()
 # print(b)
 
+student = ["ram", "shyam", "hari","gupta"]
+
+for i,x in enumerate(student):
+
+    try:
+        if i==0:
+            print("Found index and content")
+    except Exception as e:
+        print(e)        
+
