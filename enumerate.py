@@ -1,3 +1,5 @@
+#Enumerate gives index and its content respectively :
+
 # fruits = ["apple", "ball", "cat" , "dog"]
 
 # for i,x in enumerate(fruits):
