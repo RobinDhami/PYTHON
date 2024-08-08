@@ -17,7 +17,7 @@ def func():
     except Exception as e:
         print(e)    
         return 0
-    finally:
+    finally:   
         print("I am always executed")
 
 func()
@@ -48,4 +48,3 @@ elif (int(a) < 5 or int(a) > 9):
 # ModuleNotFoundError	A subclass of ImportError, raised when a module could not be found.
 # MemoryError	Raised when an operation runs out of memory.
 # OverflowError	Raised when the result of an arithmetic operation is too large to be expressed within the data type.
-  
