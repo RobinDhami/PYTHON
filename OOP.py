@@ -120,9 +120,4 @@ plane1 = Plane("Boeing", "747") #Create a Plane object
 for x in (car1, boat1, plane1):
   print(x.brand)
   print(x.model)
-<<<<<<< HEAD
   x.move()
-=======
-  x.move()
-  Security protocol
->>>>>>> aa4006372c949db76e42924eda23848cf3e54374
