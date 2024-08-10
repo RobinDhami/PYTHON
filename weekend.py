@@ -1,7 +1,10 @@
+import datetime
 tup1 = (1,2,3,4)
 tup2=(1,2,3,4)
 
 print(tup1 is tup2) #True since tuple are immutable
+x= datetime.datetime.now()
+print(x.strftime("%A"))
 
 
 f = open("weekendlog.txt","w")
