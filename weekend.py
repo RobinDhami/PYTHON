@@ -19,5 +19,3 @@ iterat=[1,2,3,4]
 dict={ 2:3 , 3:4 , 4:5 , 5:6}
 print(list(map(lambda a:a*a,iterat)))
 print(list(map(lambda a,b:a*b,dict.keys(),dict.values())))
-
-no weekends
