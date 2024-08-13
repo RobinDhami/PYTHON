@@ -1,12 +1,16 @@
-def sum(func):
+# Define the decorator
+def log_decorator(func):
     def wrapper(*args, **kwargs):
-        print(f"This is {func.__name__} function")
-        func(*args, **kwargs)  # Call the original function with arguments
+        print(f"Function {func.__name__} is being called")
+        result = func(*args, **kwargs)  # Call the original function
+        print(f"Function {func.__name__} has been called")
+        return result
     return wrapper
 
-@sum
-def hello(name):
-    print(f"My first decorator {name}")
+# Apply the decorator to a function
+@log_decorator
+def greet(name):
+    print(f"Hello, {name}!")
 
 # Call the decorated function
-hello("ram")
+greet("Alice")
