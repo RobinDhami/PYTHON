@@ -64,5 +64,3 @@ b.sort(arr)
 print("Sorted array is:")
 b.display(arr)        
         
-                
-    
