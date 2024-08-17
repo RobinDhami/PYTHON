@@ -1,7 +1,6 @@
 class Animal:
     def __init__(self, name):
         self.name = name
-
     def sound(self, volume="medium", mood="happy"):
         print(f"Welcome to {self.name}. Volume: {volume}, Mood: {mood}")
 
