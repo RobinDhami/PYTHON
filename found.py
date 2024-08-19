@@ -11,3 +11,4 @@ palin = word[::-1]
 
 if(word==palin):
     print("It is a palindrome")
+
