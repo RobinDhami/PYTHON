@@ -14,3 +14,12 @@ emp.show("Rabin")
 emp.changecompany("Tesla")
 
 print(Employee.company)
+print(emp.__dict__) #It wont return company name cause its the class varaible , it only return instance variable
+print(dir(emp))
+
+s ="Rabin-24-kalanki-CSIT"
+l= s.split("-")
+print(l)
+print(dir(l))
+l.sort() #Sorting is done directly on original list so it will return null if try to print it .
+print(l)
