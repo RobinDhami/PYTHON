@@ -23,3 +23,4 @@ print(l)
 print(dir(l))
 l.sort() #Sorting is done directly on original list so it will return null if try to print it .
 print(l)
+print(help(Employee))
