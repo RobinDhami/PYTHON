@@ -68,3 +68,5 @@ print(ob.webs)
 print(ob1.ability)
 ob3 = mixed("webshooter","machinegun")
 ob3.show()
+
+print(mixed.mro())
