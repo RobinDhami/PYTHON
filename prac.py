@@ -17,8 +17,6 @@
 #         print("not")  
 #     
 
-# no commit today
-
 def is_prime(n):
     if n <= 1:
         return False
@@ -44,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
