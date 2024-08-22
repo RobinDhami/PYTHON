@@ -1,52 +1,53 @@
-# class Animal:
-#     def __init__(self, name):
-#         self.name = name
-#     def sound(self, volume="medium", mood="happy"):
-#         print(f"Welcome to {self.name}. Volume: {volume}, Mood: {mood}")
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def sound(self, volume="medium", mood="happy"):
+        print(f"Welcome to {self.name}. Volume: {volume}, Mood: {mood}")
 
-# class Cat(Animal):    
-#     def sound(self, volume="medium", mood="happy"):
-#         super().sound(volume, mood)
-#         print(f"I am a cat. My name is {self.name}. Volume: {volume}, Mood: {mood}")
+class Cat(Animal):    
+    def sound(self, volume="medium", mood="happy"):
+        super().sound(volume, mood)
+        print(f"I am a cat. My name is {self.name}. Volume: {volume}, Mood: {mood}")
 
-# class Dog(Animal):
-#     def __init__(self, name):
-#         super().__init__(name)
-#         print("Bark", name)
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+        print("Bark", name)
 
-#     def sound(self, volume="medium", mood="happy"):
-#         super().sound(volume, mood)
-#         print(f"I am a dog. My name is {self.name}. Volume: {volume}, Mood: {mood}")
+    def sound(self, volume="medium", mood="happy"):
+        super().sound(volume, mood)
+        print(f"I am a dog. My name is {self.name}. Volume: {volume}, Mood: {mood}")
 
-# # Instantiate Cat and Dog
-# s = Cat("Whiskers")
-# a = Dog("Rex")
+# Instantiate Cat and Dog
+s = Cat("Whiskers")
+a = Dog("Rex")
 
-# # Call the sound methods with parameters
-# s.sound(volume="loud", mood="playful")  # Output: Welcome to Whiskers. Volume: loud, Mood: playful
-#                                         #         I am a cat. My name is Whiskers. Volume: loud, Mood: playful
+# Call the sound methods with parameters
+s.sound(volume="loud", mood="playful")  # Output: Welcome to Whiskers. Volume: loud, Mood: playful
+                                        #         I am a cat. My name is Whiskers. Volume: loud, Mood: playful
 
-# a.sound(volume="soft", mood="calm")     # Output: Welcome to Rex. Volume: soft, Mood: calm
-#                                         #         I am a dog. My name is Rex. Volume: soft, Mood: calm
+a.sound(volume="soft", mood="calm")     # Output: Welcome to Rex. Volume: soft, Mood: calm
+                                        #         I am a dog. My name is Rex. Volume: soft, Mood: calm
 
-# class Parent:
-#     def leg(self,count):
-#         print(f"I have {count} legs")
+class Parent:
+    def leg(self,count):
+        print(f"I have {count} legs")
 
-# class child(Parent):
-#     def leg(self, count):
-#         super().leg(count)
-#         if count>4 :
-#             print(" I am parasite")     
-#         else:
-#             print("I am a mammal")       
+class child(Parent):
+    def leg(self, count):
+        super().leg(count)
+        if count>4 :
+            print(" I am parasite")     
+        else:
+            print("I am a mammal")       
 
-# p = Parent()
-# c = child() 
+p = Parent()
+c = child() 
 
-# c.leg(4)
-# p.leg(8)
+c.leg(4)
+p.leg(8)
 
+#Multiple inheritance
 class spiderman:
     def __init__(self,webs) -> None:
         self.webs=webs
@@ -70,3 +71,29 @@ ob3 = mixed("webshooter","machinegun")
 ob3.show()
 
 print(mixed.mro())
+
+#Multilevel Inheritance
+class A:
+    def __init__(self,name) -> None:
+        self.name=name
+
+class B(A):
+    def __init__(self, name,age) -> None:
+        super().__init__(name)
+        self.age=age    
+
+    def show(self): 
+        print(self.age)
+
+class C(B):
+    def __init__(self, name,age,location) -> None:
+        self.location = location
+        super().__init__(name,age)
+    def display(self):
+        print(f"I am {self.name} and I am {self.age} years old. I live in {self.location}" )
+
+
+a = A("Hari")
+b=B("Ram",20)
+c=C("Laxman",90,"kalanki")
+c.display()
