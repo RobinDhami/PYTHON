@@ -97,3 +97,37 @@ a = A("Hari")
 b=B("Ram",20)
 c=C("Laxman",90,"kalanki")
 c.display()
+
+# Base class
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def display(self):
+        return f"Name: {self.name}"
+
+# Hierarchical classes
+class Employee(Person):
+    def __init__(self, name, employee_id):
+        super().__init__(name)
+        self.employee_id = employee_id
+    
+    def display_employee(self):
+        return f"{self.display()}, Employee ID: {self.employee_id}"
+
+class Student(Person):
+    def __init__(self, name, student_id):
+        super().__init__(name)
+        self.student_id = student_id
+    
+    def display_student(self):
+        return f"{self.display()}, Student ID: {self.student_id}"
+
+# Hybrid class
+class Scholar(Student, Employee):
+    def __init__(self, name, employee_id, student_id):
+        Employee.__init__(self, name, employee_id)
+        Student.__init__(self, name, student_id)
+    
+    def display_scholar(self):
+        return f"{self.display_employee()}, {self.display_student()}"
