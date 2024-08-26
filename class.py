@@ -16,8 +16,6 @@ obj = Sum('Harry')
 print(obj.add(4, 5))
 
         
-
-
 class Sum:
     def __init__(self,name):
         self.name=name
@@ -30,3 +28,19 @@ class Sum:
 
 obj = Sum('Harry')
 print(obj._add__(4,5))
+
+class stg:
+    def __init__(self,name) -> None:
+        self.name = name
+
+    def __mul__(self,other:int)-> str:
+        return self.name*other
+    
+st = stg("Robin")
+con=5
+print(st*con)
+
+
+
+
+
