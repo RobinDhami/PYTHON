@@ -1,11 +1,11 @@
-def prac():
-    for i in range(20):
-        yield i
-        print(i)  # Print the current value of i
+class Generator:
+    def prac(self):
+        for i in range(5):
+            yield i 
 
-# Create a generator object
-gen = prac()
-
+gen = Generator()
+val=gen.prac()
 # Iterate over the generator and print the yielded values
-for value in gen:
+for value in val:
     print(f'Yielded value: {value}')
+
