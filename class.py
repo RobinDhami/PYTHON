@@ -41,6 +41,3 @@ con=5
 print(st*con)
 
 
-
-
-
