@@ -17,3 +17,4 @@ async def main():
     await asyncio.gather(fun(),add(2,3),img())
 asyncio.run(main())    
 
+no study today 2081-05-13
