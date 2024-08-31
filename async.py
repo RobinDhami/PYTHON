@@ -17,3 +17,15 @@ async def main():
     await asyncio.gather(fun(),add(2,3),img())
 asyncio.run(main())    
 
+
+async def fetch_url(*urls):
+    for url in urls:
+        await asyncio.sleep(1)
+        return f"Fetched data from {url}"
+
+async def main():
+    urls=["www.http//iamboy.com","www.https//rpft.np"]
+    await fetch_url(*urls)
+
+if __name__ == "__main__":
+    asyncio.run(main())
