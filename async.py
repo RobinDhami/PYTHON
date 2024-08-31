@@ -18,14 +18,25 @@ async def main():
 asyncio.run(main())    
 
 
-async def fetch_url(*urls):
-    for url in urls:
-        await asyncio.sleep(1)
-        return f"Fetched data from {url}"
 
+# An asynchronous function that simulates processing each number
+async def process_number(number):
+    await asyncio.sleep(1)  # Simulate an asynchronous operation with a delay
+    return f"Processed number {number}"
+
+# A function that accepts variable number of numbers and processes them concurrently
+async def process_numbers(*numbers):
+    tasks = [process_number(num) for num in numbers]
+    results = await asyncio.gather(*tasks)
+    return results
+
+# Main function to demonstrate the usage of process_numbers
 async def main():
-    urls=["www.http//iamboy.com","www.https//rpft.np"]
-    await fetch_url(*urls)
+    numbers = [1, 2, 3, 4, 5]  # Example numbers to process
+    results = await process_numbers(*numbers)
+    for result in results:
+        print(result)
 
+# Run the main function using asyncio
 if __name__ == "__main__":
     asyncio.run(main())
