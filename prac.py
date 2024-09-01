@@ -43,3 +43,66 @@ def main():
 if __name__ == "__main__":
     main()
 
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+    
+    def get_marks(self):
+        marks_input = input("Enter your marks obtained in English, Nepali, Science, Computer (separated by commas): ")
+        self.marks = list(map(int, marks_input.split(",")))
+    
+    def calculate_average(self):
+        if len(self.marks) > 0:
+            average = sum(self.marks) / len(self.marks)
+            return average
+        else:
+            return 0
+    
+    def display_info(self):
+        average = self.calculate_average()
+        print(f"Welcome Mr./Miss {self.name} from Grade {self.grade}")
+        print(f"Your average marks are: {average:.2f}")
+
+if __name__ == "__main__":
+    student_name = input("Enter the student's name: ")
+    student_grade = input("Enter the student's grade: ")
+    
+    student = Student(student_name, student_grade)
+    
+    # Get marks and display information
+    student.get_marks()
+    student.display_info()
+
+
+
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+    
+    def get_marks(self):
+        marks_input = input("Enter your marks obtained in English, Nepali, Science, Computer (separated by commas): ")
+        self.marks = list(map(int, marks_input.split(",")))
+    
+    def calculate_average(self):
+        if len(self.marks) > 0:
+            average = sum(self.marks) / len(self.marks)
+            return average
+        else:
+            return 0
+    
+    def display_info(self):
+        average = self.calculate_average()
+        print(f"Welcome Mr./Miss {self.name} from Grade {self.grade}")
+        print(f"Your average marks are: {average:.2f}")
+
+if __name__ == "__main__":
+    student_name = input("Enter the student's name: ")
+    student_grade = input("Enter the student's grade: ")
+    
+    student = Student(student_name, student_grade)
+    
+    # Get marks and display information
+    student.get_marks()
+    student.display_info()
