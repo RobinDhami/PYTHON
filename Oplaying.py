@@ -29,5 +29,3 @@ m1.welcome()
 
 eng1 = Engineer("Alice Johnson", 28, "Engineer", "AI", 34)
 eng1.welcome()
-
-        #GG
