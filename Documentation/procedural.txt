@@ -1,0 +1,20 @@
+What is pip ??? Why do we need it ??
+PIP stands for Package Installer for Python.
+It is tool to install and manage additional package which are not provided by python standard ditribution.
+In short it is python package manager.
+Simply, it is needed to manage additonal package.
+
+Before python version 3.4 we needed to install PIP separately but after the 3.4 version PIP have been given in python installer package.
+
+
+What is PYPi ?? (Python package Index)
+PYPI is a online repository where all the package for python are hosted which are further downloaded using pip .
+
+#Important Command
+Pip Freeze
+pip install -r requirements.txt
+pip list
+
+What is pythonpath?
+PYTHONPATH is an environment variable used by Python to determine which directories to search for modules and packages. 
+When you import a module in your Python script, Python looks in the directories listed in PYTHONPATH for the module.
