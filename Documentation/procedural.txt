@@ -18,3 +18,7 @@ pip list
 What is pythonpath?
 PYTHONPATH is an environment variable used by Python to determine which directories to search for modules and packages. 
 When you import a module in your Python script, Python looks in the directories listed in PYTHONPATH for the module.
+You can make your own python path add it to python path and make your module and access it from anywhere.
+
+#Enumerate
+Give us counter and value in certain iterable obj.
