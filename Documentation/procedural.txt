@@ -23,3 +23,7 @@ You can make your own python path add it to python path and make your module and
 #Enumerate
 Give us counter and value in certain iterable obj.
 for reverse iteration do : rev = len(list)-index-1
+
+#Shallow Copy VS Deep Copy 
+ShallowShallow Copy stores the references of objects to the original memory address.Change in copy changes the original objects too.
+Deep copy stores copies of the object's value.And The change in cipy doesnt affect the original copy and vice versa
