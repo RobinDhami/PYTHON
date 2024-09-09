@@ -25,5 +25,9 @@ Give us counter and value in certain iterable obj.
 for reverse iteration do : rev = len(list)-index-1
 
 #Shallow Copy VS Deep Copy 
-ShallowShallow Copy stores the references of objects to the original memory address.Change in copy changes the original objects too.
+ShallowShallow Copy stores the references of objects to the original memory address.No copy of nested list is done 
 Deep copy stores copies of the object's value.And The change in cipy doesnt affect the original copy and vice versa
+
+Why do we need Venv??
+To avoid version conflict. We may have two application where both use same packages but of different version . In this 
+case venv help us to create a isolated environment to avoid conflicts.
