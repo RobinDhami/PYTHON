@@ -46,4 +46,7 @@ Example:
                         words = ['hello', 'world', 'python']
                         uppercase_words = [word.upper() for word in words]
                         print(uppercase_words)
-                        
+
+4.If else condition
+l=[1,2,3,4,5]
+result=[expression if condition else condition for var in iterable]
