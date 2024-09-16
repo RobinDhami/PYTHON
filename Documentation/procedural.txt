@@ -50,3 +50,13 @@ Example:
 4.If else condition
 l=[1,2,3,4,5]
 result=[expression if condition else condition for var in iterable]
+
+#Funstion : Are the reusable block of code.
+There two types are function that are provided by python. 
+Built in Function: Are the function provided by python.
+User Defined function: Are the function defined by user according to the user requirements .It is efined using keyword def.
+
+Local variable vs global variable:
+Local variable are defined when a function method or block of scope is created.The variable gets created when enters the code and gets destroyed after the block ends
+Where as the global are defined at the top level and are The variable can used through out the program 
+
