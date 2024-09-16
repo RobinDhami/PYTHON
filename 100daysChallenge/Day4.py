@@ -16,5 +16,6 @@ name = "Robin Dhami" #Global variable
 def sc():
     age = 30  #Local variable
     print(f"My name is {name} and i am {age} years old")
+    print(len(locals()))
 sc()
-
+print(globals())
