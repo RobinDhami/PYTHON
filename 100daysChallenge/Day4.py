@@ -7,10 +7,10 @@ sq(4)
 
 def circ(r):
     area = 3.14*r*r
-    return area
+    return area,3.14
 
-res=circ(5)
-print(f"The area of circle is {res}")
+res,pi=circ(5)
+print(f"The area of circle is {res} with vakue of pie as {pi}")
 
 name = "Robin Dhami" #Global variable
 def sc():
