@@ -19,3 +19,8 @@ def sc():
     print(len(locals()))
 sc()
 print(globals())
+
+age=23
+print(id(age))
+age=32
+print(id(age))

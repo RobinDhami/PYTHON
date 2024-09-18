@@ -20,6 +20,10 @@ PYTHONPATH is an environment variable used by Python to determine which director
 When you import a module in your Python script, Python looks in the directories listed in PYTHONPATH for the module.
 You can make your own python path add it to python path and make your module and access it from anywhere.
 
+Immutable Vs Mutable:
+If the value of the object can change, then the  object is called mutable, 
+while if the value cannot be changed, then the  object is called immutable. 
+
 #Enumerate
 Give us counter and value in certain iterable obj.
 for reverse iteration do : rev = len(list)-index-1
