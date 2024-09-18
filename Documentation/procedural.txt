@@ -60,3 +60,17 @@ Local variable vs global variable:
 Local variable are defined when a function method or block of scope is created.The variable gets created when enters the code and gets destroyed after the block ends
 Where as the global are defined at the top level and are The variable can used through out the program 
 
+Arguements vs Paramters
+These are defined in the function signature.
+ Eg def func(name) #This is parameter 
+These are the actual values you provide when you call the function.
+Eg func("Rabin") #This is arguements
+
+#Namespace 
+A namespace is a system that ensures each name (like variables, functions, classes, etc.) 
+is unique and can be used without conflict. 
+Types of Namespaces:
+Built-in Namespace: Contains names of all built-in objects in Python, like print(), id(), etc.
+Global Namespace: Contains names defined at the top level of a script or module.The variable last till the program execution
+Local Namespace: Contains names defined inside a function or method.Only last inside the scope.
+
