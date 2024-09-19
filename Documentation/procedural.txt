@@ -78,3 +78,7 @@ Built-in Namespace: Contains names of all built-in objects in Python, like print
 Global Namespace: Contains names defined at the top level of a script or module.The variable last till the program execution
 Local Namespace: Contains names defined inside a function or method.Only last inside the scope.
 
+List
+Tuple
+Dictionary
+Sets
