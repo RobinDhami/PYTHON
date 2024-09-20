@@ -78,7 +78,48 @@ Built-in Namespace: Contains names of all built-in objects in Python, like print
 Global Namespace: Contains names defined at the top level of a script or module.The variable last till the program execution
 Local Namespace: Contains names defined inside a function or method.Only last inside the scope.
 
-List
+List:
+A list is an ordered, mutable collection of items. 
+Lists can contain elements of different data types, including other lists.
+Characterstics of lists:
+1 ordered
+2 Mutable
+3 Indexed
+
+### List Methods and Their Functions
+1. **`append(item)`**
+   - Adds an item to the end of the list.
+
+2. **`extend(iterable)`**
+   - Adds all elements from an iterable to the end of the list.
+
+3. **`insert(index, item)`**
+   - Inserts an item at the specified index in the list.
+
+4. **`remove(item)`**
+   - Removes the first occurrence of the specified item from the list.
+
+5. **`pop([index])`**
+   - Removes and returns the item at the specified index (last item if no index is provided).
+
+6. **`clear()`**
+   - Removes all items from the list, leaving it empty.
+
+7. **`index(item, start=0, end=len(list))`**
+   - Returns the index of the first occurrence of the specified item.
+
+8. **`count(item)`**
+   - Returns the number of occurrences of the specified item in the list.
+
+9. **`sort(key=None, reverse=False)`**
+   - Sorts the items of the list in ascending or descending order.
+
+10. **`reverse()`**
+    - Reverses the order of items in the list.
+
+11. **`copy()`**
+    - Returns a shallow copy of the list.
+
 Tuple
 Dictionary
 Sets
