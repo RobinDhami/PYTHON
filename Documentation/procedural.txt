@@ -102,6 +102,9 @@
 
 #### Tuple
 **Definition**: An ordered, immutable collection of items. Once created, the items cannot be changed, added, or removed.
+Since Tuple are immutable they have less method 
+1.count(x): Returns the number of occurrences of item x in the tuple.
+2.index(x[, start[, end]]): Returns the index of the first occurrence of item x (raises ValueError if not found).
 
 **Characteristics**:
 1. Ordered
