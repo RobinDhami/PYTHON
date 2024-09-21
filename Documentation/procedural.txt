@@ -1,125 +1,135 @@
-What is pip ??? Why do we need it ??
-PIP stands for Package Installer for Python.
-It is tool to install and manage additional package which are not provided by python standard ditribution.
-In short it is python package manager.
-Simply, it is needed to manage additonal package.
 
-Before python version 3.4 we needed to install PIP separately but after the 3.4 version PIP have been given in python installer package.
+### PIP (Package Installer for Python)
+**Definition**: PIP stands for Package Installer for Python. It is a tool to install and manage additional packages that are not included in the standard Python distribution. In short, it is Python’s package manager.
+
+**Importance**:
+- Manages external packages efficiently.
+- Before Python version 3.4, PIP needed to be installed separately; from version 3.4 onwards, it is included with the Python installer.
+
+### PyPI (Python Package Index)
+**Definition**: PyPI is an online repository where Python packages are hosted and can be downloaded using PIP.
+
+### Important PIP Commands
+- **`pip freeze`**: Lists installed packages and their versions.
+- **`pip install -r requirements.txt`**: Installs packages listed in a requirements file.
+- **`pip list`**: Displays all installed packages.
+
+### PYTHONPATH
+**Definition**: PYTHONPATH is an environment variable that Python uses to determine which directories to search for modules and packages.
+ You can add your own directories to PYTHONPATH to make your modules accessible from anywhere.
+
+### Mutable vs Immutable
+- **Mutable**: Objects whose value can change (e.g., lists, dictionaries).
+- **Immutable**: Objects whose value cannot change (e.g., tuples, strings).
+
+### Enumerate
+- **Definition**: Provides a counter and value for each item in an iterable.
+- **Reverse Iteration**: Use `rev = len(list) - index - 1`.
+
+### Shallow Copy vs Deep Copy
+- **Shallow Copy**: Stores references to objects; does not create copies of nested objects.
+- **Deep Copy**: Creates copies of the object's value; changes in the copy do not affect the original.
+
+### Why Use `venv`?
+- **Purpose**: To avoid version conflicts between applications that require different versions of the same package. `venv` allows you to create isolated environments for different projects.
+
+### List Comprehension
+**Definition**: A concise way to create lists, providing a more readable means than traditional loops.
+
+**Examples**:
+1. **Simple List Comprehension**:
+   ```python
+   squares = [x**2 for x in range(10)]
+   ```
+2. **List Comprehension with Condition**:
+   ```python
+   evens = [x for x in range(10) if x % 2 == 0]
+   ```
+3. **Applying a Function**:
+   ```python
+   uppercase_words = [word.upper() for word in ['hello', 'world', 'python']]
+   ```
+4. **If-Else Condition**:
+   ```python
+   result = [expression if condition else alternative for var in iterable]
+   ```
+
+### Functions
+**Definition**: Functions are reusable blocks of code.
+
+**Types**:
+- **Built-in Functions**: Provided by Python.
+- **User-Defined Functions**: Defined by users using the `def` keyword.
+
+### Local vs Global Variables
+- **Local Variables**: Defined within a function; exist only within that scope.
+- **Global Variables**: Defined at the top level; accessible throughout the program.
+
+### Arguments vs Parameters
+- **Parameters**: Variables defined in a function signature (e.g., `def func(name)`).
+- **Arguments**: Actual values passed to a function when called (e.g., `func("Rabin")`).
+
+### Namespace
+**Definition**: A system that ensures each name (like variables, functions, classes, etc.) is unique and can be used without conflict.
+
+**Types**:
+- **Built-in Namespace**: Contains names of built-in objects (e.g., `print()`, `id()`).
+- **Global Namespace**: Contains names defined at the top level of a script or module.
+- **Local Namespace**: Contains names defined inside a function or method.
+
+### Data Structures
+
+#### List
+**Definition**: An ordered, mutable collection of items that can contain elements of different data types, including other lists.
+
+**Characteristics**:
+1. Ordered
+2. Mutable
+3. Indexed
+
+#### List Methods and Their Functions
+1. **`append(item)`**: Adds an item to the end of the list.
+2. **`extend(iterable)`**: Adds all elements from an iterable to the end of the list.
+3. **`insert(index, item)`**: Inserts an item at the specified index.
+4. **`remove(item)`**: Removes the first occurrence of the specified item.
+5. **`pop([index])`**: Removes and returns the item at the specified index.
+6. **`clear()`**: Removes all items from the list.
+7. **`index(item, start=0, end=len(list))`**: Returns the index of the first occurrence of the specified item.
+8. **`count(item)`**: Returns the number of occurrences of the specified item.
+9. **`sort(key=None, reverse=False)`**: Sorts the items in ascending or descending order.
+10. **`reverse()`**: Reverses the order of items in the list.
+11. **`copy()`**: Returns a shallow copy of the list.
+
+#### Tuple
+**Definition**: An ordered, immutable collection of items. Once created, the items cannot be changed, added, or removed.
+
+**Characteristics**:
+1. Ordered
+2. Immutable
+3. Indexed
+
+#### Dictionary
+**Definition**: An unordered collection of key-value pairs, where each key must be unique.
+
+**Characteristics**:
+1. Unordered
+2. Mutable
+3. Key-Value pairs
+
+#### Set
+**Definition**: An unordered collection of unique items.
+
+**Characteristics**:
+1. Unordered
+2. Mutable
+3. Unique items
+
+####. **List vs Tuple vs Set vs Dictionary: Quick Comparison**
+| Feature       | List              | Tuple             | Set              | Dictionary        |
+|---------------|-------------------|-------------------|-------------------|-------------------|
+| Ordered       | Yes               | Yes               | No                | No                |
+| Mutable       | Yes               | No                | Yes               | Yes               |
+| Duplicates    | Yes               | Yes               | No                | Keys are unique   |
+| Syntax        | `[ ]`             | `( )`             | `{ }`             | `{key: value}`    |
 
 
-What is PYPi ?? (Python package Index)
-PYPI is a online repository where all the package for python are hosted which are further downloaded using pip .
-
-#Important Command
-Pip Freeze
-pip install -r requirements.txt
-pip list
-
-What is pythonpath?
-PYTHONPATH is an environment variable used by Python to determine which directories to search for modules and packages. 
-When you import a module in your Python script, Python looks in the directories listed in PYTHONPATH for the module.
-You can make your own python path add it to python path and make your module and access it from anywhere.
-
-Immutable Vs Mutable:
-If the value of the object can change, then the  object is called mutable, 
-while if the value cannot be changed, then the  object is called immutable. 
-
-#Enumerate
-Give us counter and value in certain iterable obj.
-for reverse iteration do : rev = len(list)-index-1
-
-#Shallow Copy VS Deep Copy 
-ShallowShallow Copy stores the references of objects to the original memory address.No copy of nested list is done 
-Deep copy stores copies of the object's value.And The change in cipy doesnt affect the original copy and vice versa
-
-Why do we need Venv??
-To avoid version conflict. We may have two application where both use same packages but of different version . In this 
-case venv help us to create a isolated environment to avoid conflicts.
-
-List Comprehension: List comprehensions in Python provide a concise way to create lists. 
-They offer a more readable and expressive means of generating lists compared to using traditional loops and append() methods.
-Example:
- 1. Simple List Comprehension:-
-                        squares = [x**2 for x in range(10)]
-                        print(squares)
-2. List Comprehension with a Condition
-                        evens = [x for x in range(10) if x % 2 == 0]
-                        print(evens)
-
-3. Applying a Function in List Comprehension
-                        words = ['hello', 'world', 'python']
-                        uppercase_words = [word.upper() for word in words]
-                        print(uppercase_words)
-
-4.If else condition
-l=[1,2,3,4,5]
-result=[expression if condition else condition for var in iterable]
-
-#Funstion : Are the reusable block of code.
-There two types are function that are provided by python. 
-Built in Function: Are the function provided by python.
-User Defined function: Are the function defined by user according to the user requirements .It is efined using keyword def.
-
-Local variable vs global variable:
-Local variable are defined when a function method or block of scope is created.The variable gets created when enters the code and gets destroyed after the block ends
-Where as the global are defined at the top level and are The variable can used through out the program 
-
-Arguements vs Paramters
-These are defined in the function signature.
- Eg def func(name) #This is parameter 
-These are the actual values you provide when you call the function.
-Eg func("Rabin") #This is arguements
-
-#Namespace 
-A namespace is a system that ensures each name (like variables, functions, classes, etc.) 
-is unique and can be used without conflict. 
-Types of Namespaces:
-Built-in Namespace: Contains names of all built-in objects in Python, like print(), id(), etc.
-Global Namespace: Contains names defined at the top level of a script or module.The variable last till the program execution
-Local Namespace: Contains names defined inside a function or method.Only last inside the scope.
-
-List:
-A list is an ordered, mutable collection of items. 
-Lists can contain elements of different data types, including other lists.
-Characterstics of lists:
-1 ordered
-2 Mutable
-3 Indexed
-
-### List Methods and Their Functions
-1. **`append(item)`**
-   - Adds an item to the end of the list.
-
-2. **`extend(iterable)`**
-   - Adds all elements from an iterable to the end of the list.
-
-3. **`insert(index, item)`**
-   - Inserts an item at the specified index in the list.
-
-4. **`remove(item)`**
-   - Removes the first occurrence of the specified item from the list.
-
-5. **`pop([index])`**
-   - Removes and returns the item at the specified index (last item if no index is provided).
-
-6. **`clear()`**
-   - Removes all items from the list, leaving it empty.
-
-7. **`index(item, start=0, end=len(list))`**
-   - Returns the index of the first occurrence of the specified item.
-
-8. **`count(item)`**
-   - Returns the number of occurrences of the specified item in the list.
-
-9. **`sort(key=None, reverse=False)`**
-   - Sorts the items of the list in ascending or descending order.
-
-10. **`reverse()`**
-    - Reverses the order of items in the list.
-
-11. **`copy()`**
-    - Returns a shallow copy of the list.
-
-Tuple
-Dictionary
-Sets
