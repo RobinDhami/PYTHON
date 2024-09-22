@@ -127,6 +127,19 @@ Since Tuple are immutable they have less method
 2. Mutable
 3. Unique items
 
+1.add(elem): Adds an element to the set.
+2.update(iterable): Adds all elements from an iterable to the set.
+3.remove(elem): Removes the specified element; raises KeyError if not found.
+4.discard(elem): Removes the specified element if it exists; no error if not found.
+5.pop(): Removes and returns an arbitrary element; raises KeyError if the set is empty.
+6.clear(): Removes all elements from the set.
+7.copy(): Returns a shallow copy of the set.
+8.union(other_set): Returns a new set with elements from both sets.
+9.intersection(other_set): Returns a new set with elements common to both sets.
+10.difference(other_set): Returns a new set with elements in the original set that are not in other_set.
+11.symmetric_difference(other_set): Returns a new set with elements in either set but not in both.
+
+
 ####. **List vs Tuple vs Set vs Dictionary: Quick Comparison**
 | Feature       | List              | Tuple             | Set              | Dictionary        |
 |---------------|-------------------|-------------------|-------------------|-------------------|
@@ -135,4 +148,11 @@ Since Tuple are immutable they have less method
 | Duplicates    | Yes               | Yes               | No                | Keys are unique   |
 | Syntax        | `[ ]`             | `( )`             | `{ }`             | `{key: value}`    |
 
+
+Difference between append and extend 
+Append adds a single item at the end where as extends adds multiple elements at end.
+
+List vs Tuple 
+List are mutable and tuple are not we can use list where we want to add or delete item in the future and tuple where we want fix ordere items without changes.
+List have many methos as it is mutable where as tuple have less method due to its immutability.
 
