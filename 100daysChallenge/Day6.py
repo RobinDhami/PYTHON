@@ -19,3 +19,13 @@ def inter(setA,setB):
 
 res = inter(setA,setB)
 print(res)
+
+def dup(arr):
+    dup=set()
+    for i in arr:
+        if i not in dup:
+            res=dup.add(i)
+    return  res       
+brr=[1,2,3,4,5,6,1,2,45,2,3]
+res=dup(brr)
+print(res)    
