@@ -20,6 +20,7 @@ def inter(setA,setB):
 res = inter(setA,setB)
 print(res)
 
+#Remove duplicate from the list
 def dup(arr):
     dup=set()
     for i in arr:
@@ -29,3 +30,4 @@ def dup(arr):
 brr=[1,2,3,4,5,6,1,2,45,2,3]
 res=dup(brr)
 print(res)    
+
