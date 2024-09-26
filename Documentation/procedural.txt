@@ -156,3 +156,12 @@ List vs Tuple
 List are mutable and tuple are not we can use list where we want to add or delete item in the future and tuple where we want fix ordere items without changes.
 List have many methos as it is mutable where as tuple have less method due to its immutability.
 
+A lambda function is a small anonymous function defined using the lambda keyword. 
+It can take any number of arguments but can only have one expression. 
+Lambda functions are often used for short, throwaway functions,
+ especially when you need a simple function for a short period.
+Syntax:
+          lambda arguments: expression
+
+ #Higher Order Function:
+Higher order function are function which take function as an arguements.
