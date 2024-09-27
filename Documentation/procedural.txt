@@ -163,5 +163,9 @@ Lambda functions are often used for short, throwaway functions,
 Syntax:
           lambda arguments: expression
 
- #Higher Order Function:
+#Higher Order Function:
 Higher order function are function which take function as an arguements.
+#1 Map:
+Map in Python is a function that works as an iterator to return a result after
+ applying a function to every item of an iterable (tuple, lists, etc.).
+  It is used when you want to apply a single transformation function to all the iterable elements.
