@@ -12,3 +12,7 @@ squared = map(lambda a:a*a,l)
 rem=filter(lambda a:a<10,squared)
 print(list(rem))
 print(reduce(lambda a,b:a+b,l))
+
+fun = lambda x,y:3.14*x*y
+rep=fun(2,3)
+print(rep)
