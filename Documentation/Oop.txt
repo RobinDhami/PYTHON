@@ -1,0 +1,20 @@
+1) Basics: Variables, Data Types, Operators, Control Flow (if, for, while).
+2) Data Structures: Lists, Tuples, Sets, Dictionaries.
+3) Functions: Defining, Calling, Lambda Functions, Scope, Recursion.
+4) Modules and Packages: Importing, Creating Modules, Standard Library.
+5) File Handling: Reading, Writing, With statement.
+6) Error Handling: Try, Except, Finally, Custom Exceptions.
+
+OOP (Object-Oriented Programming):
+    Classes and Objects
+    Inheritance
+    Polymorphism
+    Encapsulation
+    Abstract Classes and Interfaces
+    Magic/Dunder Methods
+
+Advanced Topics:
+    Decorators
+    Generators
+    Context Managers
+    Comprehensions (List, Dict, Set)
